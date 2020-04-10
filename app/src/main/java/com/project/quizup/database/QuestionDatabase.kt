@@ -2,6 +2,10 @@ package com.project.quizup.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 
 @Database(entities = [Class::class], version = 1)
-abstract class QuestionDatabase : RoomDatabase() {}
+@TypeConverters(QuestionTypeConverter::class)
+abstract class QuestionDatabase : RoomDatabase() {
+    abstract fun QuestionDao(): QuestionDao
+}

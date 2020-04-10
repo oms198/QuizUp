@@ -8,16 +8,22 @@ import android.widget.Button
 class AddQuestions : AppCompatActivity() {
 
     private lateinit var homeButton: Button
+    private lateinit var addButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_questions)
 
         homeButton = findViewById(R.id.home_button)
+        addButton = findViewById(R.id.add_button)
 
         homeButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+//        addButton.setOnClickListener{
+        //add functionality to add question and answer as an object into database
+//        }
+
     }
 }
