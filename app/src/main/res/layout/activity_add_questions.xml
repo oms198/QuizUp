@@ -13,13 +13,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#E4F0FF"
-       />
+        android:background="#E4F0FF" />
 
 <!--This page will allow the user to add questions and answers that they will be quizzed on in the quiz page-->
     <EditText
         android:id="@+id/question"
-
         android:layout_width="365dp"
         android:layout_height="217dp"
         android:background="#E4F0FF"
@@ -31,7 +29,6 @@
         android:textColorHighlight="#FFFFFF"
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +36,6 @@
 
     <EditText
         android:id="@+id/answer"
-
         android:layout_width="325dp"
         android:layout_height="69dp"
         android:background="#E4F0FF"
@@ -51,7 +47,6 @@
         android:textColorHighlight="#FFFFFF"
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question"
@@ -68,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/answer" />
 
     <Button
-        android:id="@+id/questions_home_button"
+        android:id="@+id/home_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="left"

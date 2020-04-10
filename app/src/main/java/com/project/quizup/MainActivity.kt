@@ -28,5 +28,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddQuestions::class.java)
             startActivity(intent)
         }
+        //flashcards button to flashcards page
+        flashcardsButton.setOnClickListener{
+            val intent = Intent(this, Flashcards::class.java)
+            startActivity(intent)
+        }
+        //add note button to notes page
+        notesButton.setOnClickListener{
+            val intent = Intent(this, AddNote::class.java)
+            startActivity(intent)
+        }
+        //quiz button to quiz page
+        quizButton.setOnClickListener{
+            val intent = Intent(this, Quiz::class.java)
+            startActivity(intent)
+        }
     }
 }
