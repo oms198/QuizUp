@@ -1,4 +1,4 @@
-package com.project.quizup
+package com.project.quizup.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
