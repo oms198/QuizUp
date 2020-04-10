@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.project.quizup.database.QuestionDao
 
 class AddQuestions : AppCompatActivity() {
 
@@ -22,8 +23,7 @@ class AddQuestions : AppCompatActivity() {
             startActivity(intent)
         }
 //        addButton.setOnClickListener{
-        //add functionality to add question and answer as an object into database
+//            QuestionRepository.
 //        }
-
     }
 }
