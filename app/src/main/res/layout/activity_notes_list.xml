@@ -6,36 +6,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotesListActivity">
+    <!-- The list of notes on this page will act as the question bank for the flashcards page  -->
 
 <!--each page's toolbar will have option to go back to main page. this one specifically will have
 an option to add a note- found in the menu repo (also needs more implementation)-->
 
-<!-- The list of notes on this page will act as the question bank for the flashcards page  -->
     <android.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#E4F0FF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E4F0FF"/>
 
-<!-- will use RecyclerView for the list, but for now only cards are being used.
-this page needs more backend implementation to show previous notes -->
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="418dp"
-        android:layout_height="160dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfNotes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.131" />
-
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
